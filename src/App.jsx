@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import ProductCard from './components/ProductCard'
 
 
 
@@ -6,9 +8,11 @@ function App() {
   
 
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <div>
+      <Header />
+      <Hero />
+      <ProductCard />
+    </div>
   )
 }
 
