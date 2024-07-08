@@ -13,9 +13,11 @@ export default function Hero() {
             everyday look. Shop now and find your new favorite pieces.
           </p>
           <div className=" w-full">
-            <button className="bg-[#3c2b20] text-white border rounded-full w-32 h-10 ">
-              SHOP NOW
-            </button>
+            <a href="#">
+              <button className="bg-[#3c2b20] text-white border rounded-full w-32 h-10 hover:scale-75 transition duration-300 delay-300">
+                SHOP NOW
+              </button>
+            </a>
           </div>
         </div>
         <div>
