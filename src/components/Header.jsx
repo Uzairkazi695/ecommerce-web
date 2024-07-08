@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <header className="w-full h-20 bg-[#FDF8EB]  flex justify-between fixed shadow-md">
-        <div className="border-5 border-black flex">
+        <div className="flex">
           <img src={logo} alt="" className="absolute h-full ml-10 mr-[5rem] " />
         </div>
         <div className="text-[#5d5048] text-lg font-medium flex mr-28">

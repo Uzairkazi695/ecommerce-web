@@ -1,6 +1,9 @@
 import React from "react";
 import hero from "../assets/hero.png";
+
+
 export default function Hero() {
+  
   return (
     <>
       <section className="bg-[#FDF8EB] flex  justify-around h-[700px]">

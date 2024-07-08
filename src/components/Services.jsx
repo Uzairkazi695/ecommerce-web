@@ -5,10 +5,10 @@ import { MdOutlineReplay, MdSupportAgent } from "react-icons/md";
 export default function Services() {
   return (
     <>
-      <h2 className="text-4xl mt-7  ml-4 font-semibold text-[#3c2b20] text-center">
+        <h2 className="text-4xl mt-7  ml-4 font-semibold text-[#3c2b20] text-center bg-[#FDF8EB]">
         OUR SERVICES
       </h2>
-      <div className="flex justify-center items-center m-5 flex-wrap">
+      <div className="flex justify-center items-center m-5 flex-wrap bg-[#FDF8EB]">
         <div className="w-48 m-5">
           <div className="text-orange-400 text-8xl">
             <FaTruckFast />
