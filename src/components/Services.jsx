@@ -5,7 +5,7 @@ import { MdOutlineReplay, MdSupportAgent } from "react-icons/md";
 export default function Services() {
   return (
     <>
-        <h2 className="text-4xl mt-7  ml-4 font-semibold text-[#3c2b20] text-center bg-[#FDF8EB]">
+        <h2 className="text-4xl mt-7  ml-4 font-semibold text-[#3c2b20] text-center bg-[#FDF8EB]" id="service">
         OUR SERVICES
       </h2>
       <div className="flex justify-center items-center m-5 flex-wrap bg-[#FDF8EB]">

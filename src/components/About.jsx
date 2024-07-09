@@ -4,7 +4,7 @@ import person from "../assets/about.png";
 export default function About() {
   return (
     <>
-      <h2 className="text-4xl mt-7  ml-4 font-semibold text-[#3c2b20] text-center bg-[#FDF8EB]">
+      <h2 className="text-4xl mt-7  ml-4 font-semibold text-[#3c2b20] text-center bg-[#FDF8EB]" id="about">
         ABOUT US
       </h2>
       <div className="bg-[#FDF8EB] w-full md:flex ">

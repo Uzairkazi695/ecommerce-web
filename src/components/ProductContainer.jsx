@@ -8,7 +8,6 @@ export default function ProductContainer() {
     const productData = fetch("https://fakestoreapi.com/products?limit=5&sort=cate")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setProduct(data);
       });
   }, []);
@@ -19,6 +18,7 @@ export default function ProductContainer() {
         {product.map((product) => {
           return <ProductCard 
           key={product.id} 
+          id={product.id} 
           img={product.image}
           title={product.title}
           category={product.category}
