@@ -1,5 +1,6 @@
 import React from "react";
 import hero from "../assets/hero.png";
+import { Link } from "react-router-dom";
 
 
 export default function Hero() {
@@ -16,11 +17,11 @@ export default function Hero() {
             everyday look. Shop now and find your new favorite pieces.
           </p>
           <div className=" w-full">
-            <a href="#">
+            <Link to={'products'}>
               <button className="bg-[#3c2b20] text-white border rounded-full w-32 h-10 hover:scale-75 transition duration-300 delay-300">
                 SHOP NOW
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div>
