@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Outlet, useParams } from "react-router-dom";
 import ProductCard from "./ProductCard";
-import { useStateContext } from "../context/Context";
+
 
 
 export default function ProductPage() {
   const params = useParams();
-  const {onAdd } = useStateContext();
   const product = params.products;
  
   

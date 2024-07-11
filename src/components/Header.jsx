@@ -3,8 +3,13 @@ import { IoBagHandleSharp } from "react-icons/io5";
 import { CiMenuBurger } from "react-icons/ci";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import { cartState } from "../context/Context";
 
 export default function Header() {
+
+  const {state: {cart}} = cartState()
+
+  const totalQuantity = cart.reduce((acc, curr) => acc + curr.qty, 0);
   return (
     <>
       <header className="w-full h-20 bg-[#FDF8EB]  flex justify-between sticky top-0 shadow-md">
@@ -31,7 +36,7 @@ export default function Header() {
               <IoBagHandleSharp />
             </Link>
             <div className="bg-red-500 absolute -right-2 -bottom-1 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center">
-              0
+              {totalQuantity}
             </div>
           </div>
           <div className="flex justify-center items-center mx-5 mt-1 text-2xl md:hidden"><CiMenuBurger /></div>

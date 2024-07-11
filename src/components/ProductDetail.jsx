@@ -2,13 +2,13 @@ import React, { useContext, useEffect, useState } from "react";
 import { FaArrowLeft, FaPlus, FaMinus } from "react-icons/fa";
 import { useLocation, useParams } from "react-router-dom";
 import ProductDetailShimmer from "./ProductDetailShimmer";
-import { Context, useStateContext } from "../context/Context";
+
 
 export default function ProductDetail() {
   const { id } = useParams();
   const [productData, setProductData] = useState(null);
   const { state } = useLocation();
-  const { cartQty, incrQty, decrQty, onAdd} = useStateContext();
+
 
   function updateProductDetail(data) {
     setProductData({
@@ -65,17 +65,17 @@ export default function ProductDetail() {
             </div>
             <div className="text-justify mt-2">{productData.description}</div>
             <div className="flex items-center mt-5 gap-5">
-              <button onClick={decrQty}>
+              <button >
                 <FaMinus />
               </button>
-              <div>{cartQty}</div>
-              <button onClick={incrQty}>
+              <div>0</div>
+              <button >
                 <FaPlus />
               </button>
             </div>
             <button
               className="mt-2 bg-[#3c2b20] text-white w-32 rounded-full h-10"
-              onClick={()=>console.log(onAdd(state, cartQty))}
+              
             >
               Add To Cart
             </button>
