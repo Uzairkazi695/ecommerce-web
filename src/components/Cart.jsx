@@ -1,6 +1,5 @@
 import { FaArrowLeft, FaPlus, FaMinus } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import hero from "../assets/hero.png";
 import { cartState } from "../context/Context";
 import { useEffect, useState } from "react";
 
@@ -92,7 +91,7 @@ export default function Cart() {
                   </div>
                 </div>
               </div>
-              <hr />
+              <hr key={crypto.randomUUID()}/>
             </>
           ))
         ) : (
