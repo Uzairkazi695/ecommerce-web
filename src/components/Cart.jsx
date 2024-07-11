@@ -25,7 +25,6 @@ export default function Cart() {
   };
 
   const clearCart = () => {
-    console.log("clearing cart");
     dispatch({ type: "Clear_cart" });
   };
   const [total, setTotal] = useState();
@@ -79,7 +78,7 @@ export default function Cart() {
                       <FaPlus />
                     </button>
                     <div className="text-gray-400">${prod.price}</div>
-                    <div>$47.99</div>
+                    <div>${Math.round((prod.price * prod.qty) * 100) / 100}</div>
                     <div
                       onClick={() => {
                         dispatch({

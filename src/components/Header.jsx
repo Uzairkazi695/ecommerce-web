@@ -13,9 +13,9 @@ export default function Header() {
   return (
     <>
       <header className="w-full h-20 bg-[#FDF8EB]  flex justify-between sticky top-0 shadow-md">
-        <div className="flex">
+        <Link to={''} className="flex">
           <img src={logo} alt="" className="absolute h-full ml-10 mr-[5rem] " />
-        </div>
+        </Link>
         <div className="text-[#5d5048] text-lg font-medium flex md:mr-28">
           <ul className="hidden md:flex gap-7 items-center ">
             <li>

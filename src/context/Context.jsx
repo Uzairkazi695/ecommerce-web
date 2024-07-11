@@ -7,7 +7,6 @@ export function ContextProvider({ children }) {
   
   const [state, dispatch] = useReducer(cartReducer, {
     cart:[],
-    qty:1
   })
 
   return (
