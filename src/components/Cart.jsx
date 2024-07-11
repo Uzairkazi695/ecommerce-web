@@ -2,6 +2,7 @@ import { FaArrowLeft, FaPlus, FaMinus } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { cartState } from "../context/Context";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   const {
@@ -63,9 +64,9 @@ export default function Cart() {
                 key={prod.id}
                 className="mt-5 ml-3 flex flex-col items-center sm:flex-row"
               >
-                <div>
+                <Link to={`/products/${prod.id}`}>
                   <img src={prod.img} alt="" className="max-w-48 h-auto" />
-                </div>
+                </Link>
                 <div className="ml-5 mt-5">
                   <h2 className="uppercase text-semibold">{prod.title}</h2>
                   <div className="flex items-center mt-5 gap-5">
