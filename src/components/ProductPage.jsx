@@ -28,9 +28,9 @@ export default function ProductPage() {
           type="text"
           placeholder="Search"
           className="shadow-md p-4 w-[300px] border-none mb-2"
-          onChange={(e)=> setQuery(e.target.value)}
+          onChange={(e)=> setQuery(e.target.value.toLowerCase())}
         />
-        <select className="shadow-md p-4 w-[300px]" onChange={(e)=> setQuery(e.target.value)}>
+        <select className="shadow-md p-4 w-[300px]" onChange={(e)=> setQuery(e.target.value.toLowerCase())}>
           <option hidden>Filter By Category</option>
           <option>men's clothing</option>
           <option>jewelery</option>
