@@ -12,7 +12,6 @@ export default function Home() {
       <ProductContainer />
       <About />
       <Services />
-      <Footer />
     </div>
   );
 }
