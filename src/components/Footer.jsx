@@ -14,11 +14,11 @@ export default function Footer() {
                 </div>
                 <div className='mt-2 flex'>
                     <span className='mt-1 mr-2'><FaPhoneAlt /></span>
-                    +91 1239654856
+                    <a href="tel: +91-123-965-4856">+91 1239654856</a>
                 </div>
                 <div className='mt-2 flex'>
                     <span className='mt-1 mr-2'><IoIosMail /></span>
-                    contact@trendmart.com
+                    <a href="mailto:contact@trendmart.com">contact@trendmart.com</a>
                 </div>
             </div>
             <div className='ml-4'>

@@ -71,10 +71,10 @@ export default function ProductDetail() {
         </button>
         <div className="flex flex-col items-center md:flex-row w-full">
         
-        <div className="w-64 flex justify-center ml-10 max-h-96 mt-10 md:w-96">
+        <div className="w-64 flex justify-center mx-10 max-h-96 mt-10 md:w-96">
           <img src={productData.img} className="w-full" />
         </div>
-        <div className="mt-10 ml-20 md:w-1/2 ">
+        <div className="mt-10 flex flex-col justify-center mx-10 md:ml-20 md:w-1/2 ">
           <div className="text-2xl font-semibold">{productData.title}</div>
           <div className="text-lg mt-2">{productData.category}</div>
           <div className="text-lg text-[#3c2b20] mt-2">
